@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const List = () => {
     const columns = useSelector(state => state.columns);
-   
+    
     return(
         <div>
             <header className={styles.header}>
@@ -19,5 +19,4 @@ const List = () => {
         </div>
     );    
 };
-
 export default List;
