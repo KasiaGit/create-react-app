@@ -6107,7 +6107,11 @@ multicast-dns@^7.2.5:
 
 nanoid@^2.1.0:
   version "2.1.11"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-2.1.11.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.1.11.tgz#ec24b8a758d591561531b4176a01e3ab4f0f0280"
+>>>>>>> 864f6b4752f93330fe448db32ee31d7d54cde06c
   integrity sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==
 
 nanoid@^3.3.4:
@@ -7821,7 +7825,11 @@ shell-quote@^1.7.3:
 
 shortid@^2.2.16:
   version "2.2.16"
+<<<<<<< HEAD
   resolved "https://registry.npmjs.org/shortid/-/shortid-2.2.16.tgz"
+=======
+  resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.16.tgz#b742b8f0cb96406fd391c76bfc18a67a57fe5608"
+>>>>>>> 864f6b4752f93330fe448db32ee31d7d54cde06c
   integrity sha512-Ugt+GIZqvGXCIItnsL+lvFJOiN7RYqlGy7QE41O3YC1xbNSeDGIRO7xg2JJXIAj1cAGnOeC1r7/T9pgrtQbv4g==
   dependencies:
     nanoid "^2.1.0"
