@@ -1,20 +1,31 @@
 import styles from './List.module.scss';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
-import { AllColumn } from '../../redux/store';
+import { useSelector } from 'react-redux';
+import { getListById } from '../../redux/store';
+import { getColumnsByList } from '../../redux/store';
+import { useParams } from 'react-router';
+import SearchForm from '../SearchForm/SearchForm';
+import { Navigate } from 'react-router';
 
 const List = () => {
-    const columns = AllColumn();
+
+    const { listId } = useParams();
+
+    const columns = useSelector(state => getColumnsByList(state, listId));
+    const listData = useSelector(state => getListById(state, listId));
+    if(!listData) return <Navigate to="/" />
     return(
         <div>
             <header className={styles.header}>
-                <h2 className={styles.title}>Things to do<span >soon</span></h2>
+                <h2 className={styles.title}>{listData.title}</h2>
             </header>
-            <p className={styles.description}>Intresting things i want to check out</p>
+            <p className={styles.description}>{listData.description}</p>
+            <SearchForm />
             <section className={styles.columns}>
                 {columns.map(column => <Column key={column.id} {...column}/>)}
             </section>
-            <ColumnForm />
+            <ColumnForm listId={listId}/>
         </div>
     );    
 };

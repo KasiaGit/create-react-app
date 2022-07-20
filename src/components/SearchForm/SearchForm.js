@@ -11,7 +11,6 @@ const SearchForm = () => {
     const handleSearch = e => {
         e.preventDefault();
         dispatch(updateSearch(value));
-        setValue('');
     }
    
     return(
