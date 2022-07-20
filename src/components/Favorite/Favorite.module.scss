@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.favorite {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: $radius;
+}
+.subtitle {
+    text-align: center;
+    font-size: 22px;
+}
